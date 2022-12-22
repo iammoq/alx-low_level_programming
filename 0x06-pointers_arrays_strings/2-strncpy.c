@@ -7,7 +7,7 @@
  * @n : length
  * Return: dest
 */
-char *_strncpy(char *src, char *dest, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
