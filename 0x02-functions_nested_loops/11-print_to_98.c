@@ -2,21 +2,21 @@
 /**
  * print_to_98 - print all natural numbers from input to 98
  *	separated by comma and then space
- * @num: number entered
+ * @n: number entered
  * Return:
  */
-void print_to_98(int num)
+void print_to_98(int n)
 {
-	if (num >= 98)
+	if (n >= 98)
 	{
-		while (num > 98)
-			printf("%d, ", num--);
-		printf("%d\n", num);
+		while (n > 98)
+			printf("%d, ", n--);
+		printf("%d\n", n);
 	}
 	else
 	{
-		while (num < 98)
-			printf"%d, ", num++);
-		printf("%d\n", num);
+		while (n < 98)
+			printf"%d, ", n++);
+		printf("%d\n", n);
 	}
 }
