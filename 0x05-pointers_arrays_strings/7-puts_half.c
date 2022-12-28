@@ -18,17 +18,12 @@ void puts_half(char *str)
 	}
 
 	if (a % 2 == 1)
-	{
 		i = a / 2;
-	}
 	else
-	{
 		i = (a - 1) / 2;
-	}
 
 	for (i = 0; i < a; i++)
-	{
 		putchar(str[i]);
-	}
+
 	putchar('\n');
 }
