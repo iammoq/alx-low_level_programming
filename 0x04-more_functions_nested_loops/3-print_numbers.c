@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_numbers - print numbers from zero to nine
  * Return: void
