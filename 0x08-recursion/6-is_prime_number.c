@@ -1,23 +1,23 @@
 #include "main.h"
 /**
  * number - loop
- * @num: number
+ * @n: number
  * @i: number to iterate
  * Return: 0
  */
-int number(int num, int i)
+int number(int n, int i)
 {
-	if (i == num - 1)
+	if (i == n - 1)
 	{
 		return (1);
 	}
-	else if (num % i == 0)
+	else if (n % i == 0)
 	{
 		return (0);
 	}
-	if (num % i != 0)
+	if (n % i != 0)
 	{
-		return (number(num, i + 1));
+		return (number(n, i + 1));
 	}
 	return (0);
 }
@@ -38,5 +38,5 @@ int is_prime_number(int n)
 	{
 		return (1);
 	}
-	return (number(num, i));
+	return (number(n, i));
 }
