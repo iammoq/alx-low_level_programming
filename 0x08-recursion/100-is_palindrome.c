@@ -8,11 +8,13 @@
  */
 int checker(int *s, int len, int i)
 {
-	if (i < len && s[i] == s[len])
-		return (checker(s, len - 1, i + 1));
-	if (s[i] != s[len])
+	if (s[len] == s[i])
+		if (len > i / 2)
+			return (1);
+		else
+			return (checker(s, len + 1, i - 1));
+	else
 		return (0);
-	return (1);
 }
 /**
  * _strlen_recursion - prints length of string
@@ -20,7 +22,7 @@ int checker(int *s, int len, int i)
  * Return: 0
  */
 int _strlen_recursion(char *s)
-	if (*s != '\0')
+	if (s[0] != '\0')
 		return (1 + _strlen_recursion(s + 1));
 	return (0);
 }
